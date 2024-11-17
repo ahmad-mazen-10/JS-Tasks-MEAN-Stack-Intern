@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quotes</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #300;
+        width: 500px;
+        height: 700px;
+        margin: auto;
+
+        h1,
+        h5 {
+          color: #fff;
+          margin: 20px;
+        }
+        button {
+          background-color: #fff;
+          color: #300;
+          padding: 15px 25px;
+          margin: 20px;
+          font-size: 18px;
+          border-radius: 12px;
+        }
+        div#quote {
+          background-color: #fff;
+          color: #300;
+          width: 300px;
+          height: auto;
+          padding: 24px;
+          border-radius: 6px;
+          text-align: center;
+        }
+        div#author {
+          color: #fff;
+          border: #fff 2px solid;
+          border-radius: 6px;
+          width: auto;
+          height: auto;
+          padding: 24px;
+          margin: 24px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quote of the Day</h1>
+    <h5>Press the button below to receive a random quote!</h5>
+
+    <button id="newQuote">New Quote</button>
+    <div id="quote">Loading...</div>
+    <div id="author"></div>
+
+    <script src="./randomQuotes.js"></script>
+  </body>
+</html>
